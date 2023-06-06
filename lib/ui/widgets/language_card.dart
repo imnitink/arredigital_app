@@ -9,22 +9,26 @@ class LanguageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return isSelected?InkWell(
-      child: Container(
-        width: 92,
-        height: 49,
-        decoration: BoxDecoration(
-          border: Border.all(color: orange),
-          borderRadius: BorderRadius.all(Radius.circular(8.0)),
-          color: secondaryColor
-        ),
-        child: Center(
-          child: Text(
-            style:TextStyle(
-              color: orange
+      child: Stack(
+        children: [
+          Container(
+            width: 92,
+            height: 49,
+            decoration: BoxDecoration(
+              border: Border.all(color: orange),
+              borderRadius: BorderRadius.all(Radius.circular(8.0)),
+              color: secondaryColor
             ),
-            text
+            child: Center(
+              child: Text(
+                style:TextStyle(
+                  color: orange
+                ),
+                text
+              ),
+            ),
           ),
-        ),
+        ],
       ),
     ):
     InkWell(

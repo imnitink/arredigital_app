@@ -64,19 +64,39 @@ class BottomSheetWidget extends StatelessWidget {
                       SizedBox(height: 40,),
                       Row(
                         children: [
-                          LanguageCard(text: 'বাংলা',isSelected: controller.isBanglaSelected),
+                          InkWell(
+                            onTap: (){
+                              controller.selectBangla();
+                            },
+                              child: LanguageCard(text: 'বাংলা',isSelected: controller.isBanglaSelected)),
                           SizedBox(width: 20,),
-                          LanguageCard(text: 'తెలుగు',isSelected: controller.isTeluguSelected),
+                          InkWell(
+                            onTap: (){
+                              controller.selectTelugu();
+                            },
+                              child: LanguageCard(text: 'తెలుగు',isSelected: controller.isTeluguSelected)),
                           SizedBox(width: 20,),
-                          LanguageCard(text: 'മലയാളം',isSelected: controller.isMalayalamSelected),
+                          InkWell(
+                            onTap: (){
+                              controller.selectMalaylam();
+                            },
+                              child: LanguageCard(text: 'മലയാളം',isSelected: controller.isMalayalamSelected)),
                         ],
                       ),
                       SizedBox(height: 40,),
                       Row(
                         children: [
-                          LanguageCard(text: 'मराठी',isSelected: controller.isMarathiSelected),
+                          InkWell(
+                            onTap: (){
+                             controller.selectMarathi();
+                            },
+                              child: LanguageCard(text: 'मराठी',isSelected: controller.isMarathiSelected)),
                           SizedBox(width: 20,),
-                          LanguageCard(text: 'தமிழ்',isSelected: controller.isTamilSelected),
+                          InkWell(
+                            onTap: (){
+                             controller.selectTamil();
+                            },
+                              child: LanguageCard(text: 'தமிழ்',isSelected: controller.isTamilSelected)),
                         ],
                       )
                     ],

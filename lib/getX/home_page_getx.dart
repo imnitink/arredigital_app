@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 
 class HomePageGetX extends GetxController{
 
-  bool isEnglishSelected=false;
+  bool isEnglishSelected=true;
   bool isHindiSelected=false;
   bool isGujratiSelected=false;
   bool isBanglaSelected=false;
